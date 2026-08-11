@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞飞孙悟空</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- 关键：p5 库必须在 sketch.js 之前加载 -->
+    <script src="./libs/p5.min.js"></script>
+</head>
+<body>
+    <!-- 吃桃动画 GIF（独立 DOM 元素，p5 画布之外）-->
+    <img id="eatPeachGif" src="./assets/svg/ui/吃桃.gif" alt="吃桃" />
+    <!-- p5 画布会自动挂载到 body，初始时在 GIF 之后绘制 -->
+    <script src="./sketch.js"></script>
+</body>
+</html>
