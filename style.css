@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    /* 强制 body 居中 canvas */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+canvas {
+    display: block;
+    width: min(96vw, calc(96vh * 16 / 9)) !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    max-width: 96vw !important;
+    max-height: 96vh !important;
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+    margin: 0 auto !important;
+    position: relative !important;
+}
+
+#eatPeachGif {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 72px !important;
+    height: 72px !important;
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+    pointer-events: none !important;
+    z-index: 9999 !important;
+}
+
+#eatPeachGif.hidden {
+    display: none !important;
+}
